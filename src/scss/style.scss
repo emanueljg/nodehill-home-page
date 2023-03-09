@@ -1,0 +1,26 @@
+@import 'google-fonts';
+@import 'variable-overrides';
+@import 'bootstrap/scss/bootstrap';
+@import 'sticky-footer';
+
+@media screen and (orientation: landscape) {
+  .logo img {
+    height: 20vh;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .logo img {
+    width: 70vw;
+  }
+}
+
+.navbar {
+  border: 1px solid #899b47;
+  border-left: 0;
+  border-right: 0;
+}
+
+footer {
+  background-color: #a6b66b;
+}
