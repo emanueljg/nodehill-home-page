@@ -1,12 +1,21 @@
 import { useEffect } from 'react';
 import NavMenu from './NavMenu';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useStates } from './utilities/states';
 import MarkDownViewer from './MarkDownViewer';
 import Logo from './Logo';
 import Footer from './Footer';
 
 export default function App() {
+
+  const location = useLocation();
+  useEffect(() => {
+    let logo = document.querySelector('header .logo');
+    logo && window.scrollTo(0, logo.clientHeight + 1);
+    // should we scroll past top logo even if the user hasn't done it?
+    // (currently we  do) - if not the use window.offsetTop
+    // to check if the user has scrolled past or not...
+  }, [location]);
 
   const s = useStates('main', {
     mdLoaded: false,
@@ -58,7 +67,6 @@ export default function App() {
     document.body.addEventListener('click', listener);
     return () => document.body.removeEventListener('click', listener);
   }, []);
-
 
   return !s.mdLoaded ? null : <>
     <header>

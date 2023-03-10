@@ -1,10 +1,9 @@
 # This is the about page
-Node Hill sysslar med IT-utbildningar, främst på yrkes­hög­skole­nivå. Här agerar vi leveran­törer till olika yrkes­hög­skolor och levererar ofta all undervisning till en utbildning:
+Exercitationem doloribus animi quas adipisci deserunt fugiat laudantium a nam magni dignissimos velit consequatur aspernatur numquam est id doloremque officia vero temporibus commodi placeat, ullam minima repudiandae cupiditate magnam! Odit praesentium optio error quod odio sunt dicta voluptatum? 
 
-Yrkeshögskolan tecknar avtal med oss och vi tillhandahåller rätt föreläsare, lärare och handledare för utbildningen, samt allt kursmaterial.
+Dignissimos harum sequi iste sunt quisquam minus eveniet, commodi aliquam vitae voluptas laudantium labore excepturi hic accusamus exercitationem porro! Ut dicta saepe repellendus nihil pariatur iste voluptas recusandae corrupti.
 
-Vi utbildar inom webbutveckling, programmering, testning och agil metodik. Dessutom har vi djup kompetens inom många olika webbaserade ramverk.
-
-Några av de saker vi är bra på är: HTML5, CSS3, JavaScript, TypeScript, Java, PHP, Python, C#, Node.js, React, Vue.js, testledning, testmetodik, testautomation och agil metodik (SCRUM, Kanban, LEAN, XP).
-
-Vi utbildar främst i Malmö/Lund-regionen (där vi har vårt huvudkontor), men även i Stockholm och Göteborg.
+As we always say:
+* Eveniet perspiciatis alias dicta non dolor necessitatibus odit sit voluptate officiis aliquam. Dicta sunt soluta et provident quidem animi reprehenderit distinctio eaque, a dolorum ipsum pariatur sint quae tempora error?
+* Dicta animi aperiam repellat laboriosam quasi nihil, hic ipsa amet, obcaecati placeat nulla iusto veritatis ipsum odit commodi rerum tempora veniam debitis consequatur non, a culpa aut nisi! Natus, iure.
+* Numquam voluptatem exercitationem labore quod tenetur! Eos sed magni ab distinctio dolorem sit dolor impedit consectetur amet optio, obcaecati pariatur cum cupiditate placeat ut laboriosam quam architecto deleniti minus sequi?
