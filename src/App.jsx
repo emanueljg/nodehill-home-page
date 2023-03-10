@@ -10,6 +10,11 @@ export default function App() {
 
   const s = useStates('main', {
     mdLoaded: false,
+    // Main menu!
+    // Note the property Component can be used too 
+    // in order to navigate and mount a special component
+    // if only md/markdown is provided the component
+    // MarkDownViewer will be used with the markdown
     menu: [
       { label: 'Start', path: '/', md: 'start' },
       { label: 'About us', path: '/about', md: 'about' },
