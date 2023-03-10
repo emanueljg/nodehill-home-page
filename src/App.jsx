@@ -8,32 +8,23 @@ import Footer from './Footer';
 
 export default function App() {
 
-  const location = useLocation();
-  useEffect(() => {
-    let logo = document.querySelector('header .logo');
-    logo && window.scrollTo(0, logo.clientHeight + 1);
-    // should we scroll past top logo even if the user hasn't done it?
-    // (currently we  do) - if not the use window.offsetTop
-    // to check if the user has scrolled past or not...
-  }, [location]);
-
   const s = useStates('main', {
     mdLoaded: false,
     menu: [
-      { label: 'Hem', path: '/', md: 'hem' },
-      { label: 'About', path: '/about', md: 'about' },
+      { label: 'Start', path: '/', md: 'start' },
+      { label: 'About us', path: '/about', md: 'about' },
       {
-        label: 'More', sub: [
-          { label: 'Much more', path: '/good', md: 'good' },
-          { label: 'Much less', path: '/bad', md: 'bad' }
+        label: 'Our customers', sub: [
+          { label: 'Page 4', path: '/page4', md: 'page4' },
+          { label: 'Page 5', path: '/page5', md: 'page5' }
         ]
       },
-      { label: 'Om företaget', path: '/s', md: 'hem' },
-      { label: 'YH-utbildningar', path: '/abouts', md: 'about' },
+      { label: 'Our team', path: '/our-team', md: 'our-team' },
+      { label: 'Top 10', path: '/top-10', md: 'top-10' },
       {
-        label: 'Företagsutbildningar', sub: [
-          { label: 'Inom React', path: '/goods', md: 'good' },
-          { label: 'Inom agil metodik', path: '/bads', md: 'bad' }
+        label: 'Classroom stories', sub: [
+          { label: 'Page 7', path: '/page7', md: 'page7' },
+          { label: 'Page 8', path: '/page8', md: 'page8' }
         ]
       }
     ]
@@ -67,6 +58,15 @@ export default function App() {
     document.body.addEventListener('click', listener);
     return () => document.body.removeEventListener('click', listener);
   }, []);
+
+  const location = useLocation();
+  useEffect(() => {
+    let logo = document.querySelector('header .logo');
+    logo && window.scrollTo(0, logo.clientHeight + 1);
+    // should we scroll past top logo even if the user hasn't done it?
+    // (currently we  do) - if not the use window.offsetTop
+    // to check if the user has scrolled past or not...
+  }, [location]);
 
   return !s.mdLoaded ? null : <>
     <header>
