@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useStates } from './utilities/states';
+import { useStates } from '../utilities/states';
 
 export default function Footer() {
 
@@ -16,7 +16,7 @@ export default function Footer() {
     <div className="row">
       <div className="col-12 col-md-5 col-lg-4 text-dark px-5 position-relative">
         <address>
-          <p><b>Node Hill AB</b></p>
+          <p className="mb-2"><b>Node Hill AB</b></p>
           <p>Kyrkogatan 21</p>
           <p>222 22 LUND, Sverige</p>
           <p>Org-nr: 559028-9459</p>
@@ -29,9 +29,9 @@ export default function Footer() {
         </Link>
       </div>
       <div className="col-12 col-md-7 col-lg-4 mt-3 m-md-0 text-dark px-5 position-relative">
-        <p><b>Pages:</b></p>
+        <p className="mb-2"><b>Pages:</b></p>
         <nav>
-          {routes.map(({ path, label, parent }) => <p><Link to={path}>{parent && ((" " || parent.label) + ' ')}{label}</Link></p>)}
+          {routes.map(({ path, label, parent }) => <p className="me-5"><Link to={path}>{parent && ((" " || parent.label) + ' ')}{label}</Link></p>)}
         </nav>
         <Link className="logo position-absolute d-none d-md-block d-lg-none" to="/">
           <img className="" src="/images/logos/nodehill-logo-text-green-vertical.jpg" />

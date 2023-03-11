@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import NavMenu from './NavMenu';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useStates } from './utilities/states';
-import MarkDownViewer from './MarkDownViewer';
+import { useStates } from '../utilities/states';
+import MarkDownViewer from './handle-markdown/MarkDownViewer';
 import Logo from './Logo';
 import Footer from './Footer';
 
