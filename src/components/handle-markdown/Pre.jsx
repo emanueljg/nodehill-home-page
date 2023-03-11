@@ -38,7 +38,7 @@ export default function Pre({ children }) {
     };
 
     return <>
-      <span className="big-poster-image">
+      <span className={'big-poster-image ' + d.className}>
         <span className={'page-poster-holder ' + d.className}>
           <img
             src={d.src} alt={d.alt}
@@ -46,13 +46,13 @@ export default function Pre({ children }) {
           />
         </span>
         {d.text && <span
-          className={'poster-text ' + alignBig + ' ' + d.className}
+          className={'poster-text ' + alignBig}
           style={bigTextCss}
         >
           {d.text}
         </span>}
       </span>
-      <span className="small-poster-image">
+      <span className={'small-poster-image ' + d.className}>
         <span className={'page-poster-holder ' + d.className}>
           <img
             src={d.src} alt={d.alt}
@@ -60,7 +60,7 @@ export default function Pre({ children }) {
           />
         </span>
         {d.text && <span
-          className={'poster-text ' + alignSmall + ' ' + d.className}
+          className={'poster-text ' + alignSmall}
           style={smallTextCss}
         >
           {d.text}
