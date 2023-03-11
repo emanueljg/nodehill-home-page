@@ -36,6 +36,12 @@
     color: #000;
   }
 
+  .nav-link,
+  .dropdown-item {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
 }
 
 .navbar-toggler {
