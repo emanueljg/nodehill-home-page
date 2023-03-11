@@ -1,0 +1,25 @@
+main {
+  border-top: 1px solid #899b47;
+
+  .row {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  p,
+  li {
+    font-family: 'Sofia Sans';
+    font-size: 1.1em;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  // Optical alignment
+  h1,
+  h2,
+  h3 {
+    margin-left: -2px;
+  }
+}

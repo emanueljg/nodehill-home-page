@@ -1,0 +1,83 @@
+.navbar {
+  position: sticky;
+  z-index: 100;
+  background-color: white;
+  top: -1px;
+  border-top: 1px solid #899b47;
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 1.1em;
+
+  a {
+    color: #333;
+  }
+
+  .dropdown-menu {
+    margin-bottom: 1rem;
+  }
+
+  a.active:not(.dropdown-item),
+  a:hover:not(.dropdown-item),
+  .active>.dropdown-toggle {
+    text-decoration: underline;
+    color: #899b47 !important;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+  }
+
+
+  .dropdown-item {
+    text-decoration: none !important;
+  }
+
+  .dropdown-item.active {
+    color: #000;
+  }
+
+}
+
+.navbar-toggler {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.navbar-toggler::after {
+  margin-left: 0.5em;
+  color: #333;
+  content: 'Menu';
+  font-size: 90%;
+  font-weight: 900;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  margin-left: 0.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: transparent escape-svg($btn-close-bg) center / $btn-close-width auto no-repeat;
+}
+
+.navbar-toggler:not(.collapsed)::after {
+  margin-left: 0.7em;
+}
+
+.dropdown-toggle::after {
+  vertical-align: 0.12em;
+}
