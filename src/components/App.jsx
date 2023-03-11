@@ -61,7 +61,23 @@ export default function App() {
       }
     }
     document.body.addEventListener('click', listener);
-    return () => document.body.removeEventListener('click', listener);
+
+
+    /*let listener2 = () => {
+      let posterImages = [...document.querySelectorAll('.page-poster-holder img')];
+      let grey = posterImages.map(x => Math.min(1, Math.abs((x.offsetTop + x.height / 2 - window.scrollY) / window.innerHeight - 0.5)))
+      posterImages.forEach((x, i) => x.style.filter = 'invert(' + grey[i] + ')');
+    };
+    window.addEventListener('scroll', listener2);
+    window.addEventListener('resize', listener2);*/
+
+
+    return () => {
+      document.body.removeEventListener('click', listener);
+      /*window.removeEventListener('scroll', listener2);
+      window.removeEventListener('resize', listener2);*/
+    };
+
   }, []);
 
   const location = useLocation();
