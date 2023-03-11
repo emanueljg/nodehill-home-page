@@ -1,4 +1,4 @@
-### ![nodehill team](/images/page-posters/nodehill-team.jpg#50,39) [Meat the team!](#poster-text)
+![nodehill team:Meat the team!](/images/page-posters/nodehill-team.jpg#50,39)
 
 # Until we meet IRL, here's some info...
 

@@ -34,6 +34,8 @@ img.align-left {
   text-transform: uppercase;
   font-size: 4vw;
   margin-top: -16vw;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 img[src*="page-posters"] {
