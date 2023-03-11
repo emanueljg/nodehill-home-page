@@ -15,7 +15,7 @@ export default function NavMenu() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          {s.menu.map(({ path, label, sub, parent }) => !sub ?
+          {s.menu.map(({ path, label, sub }) => !sub ?
             <Link className={'nav-link' + (active === path ? ' active' : '')} to={path}>{label}</Link> :
             <NavDropdown title={label} className={sub.find(x => x.path === active) && 'active'}>
               {sub.map(({ path, label }) => <Link className={'dropdown-item' + (active === path ? ' active' : '')} to={path}>{label}</Link>)}
