@@ -48,7 +48,7 @@ export default function App() {
       (await Promise.all(allMd)).forEach((t, i) => routes[i].mdContent = t);
       s.mdLoaded = true;
     })();
-    // Fix clicks on hamburger menu items and clicks sub menu items 
+    // Fix clicks on hamburger menu items and sub menu items 
     // so that the menu hides after click
     let listener = e => {
       let toggler = document.querySelector('button.navbar-toggler');
