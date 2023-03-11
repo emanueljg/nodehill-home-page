@@ -1,10 +1,26 @@
-![stormy sea:The water is wide](/images/page-posters/sea.jpg)
+```json,poster-image
+{
+  "src": "/images/page-posters/sea.jpg",
+  "alt": "stormy sea",
+  "text": "The water is wide..."
+}
+```
 
 # This is the start page
 
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque culpa, voluptatibus dolorem in minima at ipsam illo maiores similique rerum voluptatum impedit laudantium esse. Quaerat, exercitationem maiores quisquam vitae facilis facere? Magni itaque recusandae beatae laborum nisi sed molestiae! Incidunt totam amet quos nulla aspernatur cumque nostrum ducimus facere pariatur assumenda quae dolore vel temporibus minus, velit atque similique? Dicta quidem rerum sit? Doloremque quidem odit itaque sequi possimus nihil consectetur fugiat dolor iure aliquid explicabo, quo temporibus illum dolorum magni iusto quia earum totam eaque ipsum, fuga reprehenderit porro quod? Eum numquam harum alias ipsum animi assumenda quas nobis.
 
-![students:Learn more in Agile Teams!](/images/page-posters/students.jpg#50,10,mt-5)
+```json,poster-image
+{
+  "src": "/images/page-posters/students.jpg",
+  "alt": "students",
+  "text": "Learn more in Agile Teams!",
+  "position": [50,10],
+  "textPosition": ["center", 0, 30],
+  "textPositionSmall": ["center", 0, 80],
+  "className": "mt-5"
+}
+```
 
 # All about the students
 

@@ -1,5 +1,16 @@
-# Page 8
+```json,poster-image
+{
+  "src": "/images/page-posters/piano-hands.jpg",
+  "alt": "hands on piano",
+  "text": "Med känsla för nyanser",
+  "position": [50,80],
+  "positionSmall" : [50,80],
+  "textPosition": ["center", 0, 35],
+  "textPositionSmall": ["center", 0, 20]
+}
+```
 
+# Page 8
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit unde blanditiis cumque aperiam debitis architecto! Dolor delectus velit nihil doloribus ullam numquam voluptas id nostrum alias aspernatur placeat suscipit omnis ratione fuga dignissimos eaque, ad libero consequatur temporibus? Ducimus repudiandae ut omnis quam laboriosam corrupti similique tempora deleniti facere, reiciendis dolorem odit! Quis aliquid consequatur accusantium expedita odit id saepe quod ea quasi, nisi, vitae eius adipisci minima placeat! Doloribus vitae autem nesciunt quidem atque qui quos tenetur porro sint sed expedita, nihil a minus ullam corporis iusto unde id sit ut. Sint quis nulla aut libero dignissimos ipsum rerum. Possimus illum quibusdam excepturi vel vitae, dolor assumenda quam eaque est voluptatem modi unde eos dolorem, ullam itaque nemo. Autem iure ullam quis? Quibusdam, tempora facere culpa perferendis hic soluta nostrum blanditiis? Assumenda ab, numquam nostrum impedit, voluptate voluptates voluptatem ratione dolorum ducimus totam fuga aspernatur, odio inventore delectus. Repudiandae distinctio nulla dolores quod exercitationem corrupti temporibus dicta. Totam consectetur numquam iste, repellendus consequatur sunt accusamus facere saepe id sequi. Eveniet, voluptate qui. Itaque quas sapiente excepturi. Nostrum fugit impedit voluptas libero quidem voluptatem quas consequuntur iure corrupti, accusantium repellendus voluptatibus veritatis, a facere ex maiores nisi iusto iste!
 
 Perspiciatis, odit iure. Deserunt quasi accusamus amet veritatis voluptate. Officia ipsa incidunt repellat. Vel minima dolor ducimus voluptas, quos minus aperiam doloremque est maxime, consequuntur quam dignissimos! Repellat, blanditiis vitae, officia nulla ad aspernatur modi delectus minus libero eius, enim quod fuga sequi error inventore aut ut! Praesentium laboriosam iste ab nesciunt cumque sunt, autem, quae, aliquid sint distinctio consequuntur quisquam ducimus magnam impedit aliquam cupiditate accusamus fuga. Accusantium cupiditate nisi vero nam, maxime laborum reprehenderit totam debitis corrupti fugit. Accusantium commodi aperiam at perferendis nisi repellendus odit voluptates rerum quos quod, expedita fugiat! Dolor, quasi! Eum voluptates repellat, sed nam modi quas labore quod itaque est porro optio minima! Ratione in cupiditate, rerum blanditiis consequuntur earum ullam eaque quos harum hic totam cum iste. Itaque doloribus eius, commodi dolores quia quam inventore adipisci fugiat necessitatibus sint sed saepe aliquam recusandae obcaecati. Vero quis deserunt beatae non. Ea earum repellat dolor nobis sint autem laudantium explicabo ipsam a suscipit corrupti fugit sapiente voluptates assumenda eius inventore, ut laborum blanditiis animi, ullam sequi sunt soluta. Praesentium, voluptates. Alias quos aliquam, magni dolore unde pariatur hic eum ducimus, cupiditate illum sunt dignissimos? Nulla, illum? Facilis quos consectetur expedita porro mollitia commodi corrupti.

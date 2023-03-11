@@ -17,6 +17,7 @@ img.align-left {
 }
 
 .page-poster-holder+.poster-text {
+  padding: 0 4vw;
   display: block;
   font-family: 'Sofia Sans';
   font-weight: 900;
@@ -27,13 +28,12 @@ img.align-left {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-  text-align: center;
   position: absolute;
   width: 100%;
   left: 0;
   text-transform: uppercase;
   font-size: 4vw;
-  margin-top: -16vw;
+  margin-top: -14vw;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -54,8 +54,25 @@ img[src*="page-posters"] {
   height: 25vw;
 }
 
+.big-poster-image {
+  display: block;
+}
+
+.small-poster-image {
+  display: none;
+}
+
 // use 767.98 or 991.98?
 @media screen and (orientation: portrait) and (max-width: 991.98px) {
+
+  .big-poster-image {
+    display: none;
+  }
+
+  .small-poster-image {
+    display: block;
+  }
+
   img[src*="page-posters"] {
     aspect-ratio: 2 / 1;
   }
@@ -66,7 +83,7 @@ img[src*="page-posters"] {
 
   .page-poster-holder+.poster-text {
     font-size: 8vw;
-    margin-top: -25vw;
+    margin-top: -31vw;
   }
 
 }

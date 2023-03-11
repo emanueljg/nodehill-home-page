@@ -1,4 +1,14 @@
-![nodehill team:Meat the team!](/images/page-posters/nodehill-team.jpg#50,39)
+```json,poster-image
+{
+  "src": "/images/page-posters/nodehill-team.jpg",
+  "alt": "the nodehill team",
+  "text": "Möt Node Hill-teamet!",
+  "position": [50,37],
+  "positionSmall" : [50,70],
+  "textPosition": ["center", 0, 55],
+  "textPositionSmall": ["center", 0, 60]
+}
+```
 
 # Until we meet IRL, here's some info...
 
