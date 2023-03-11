@@ -42,10 +42,10 @@ export default function App() {
   useEffect(() => {
     // Load all the markdown
     (async () => {
-      for (let route of routes.filter(x => x.md)) {
-        route.mdContent = await (await fetch('/markdown/' + route.md + '.md')).text();
-        route.Component = route.Component || MarkDownViewer;
-      }
+      let allMd = routes
+        .filter(x => x.md && (x.Component = x.Component || MarkDownViewer))
+        .map(x => fetch('/markdown/' + x.md + '.md').then(x => x.text()));
+      (await Promise.all(allMd)).forEach((t, i) => routes[i].mdContent = t);
       s.mdLoaded = true;
     })();
     // Fix clicks on hamburger menu items and clicks sub menu items 
@@ -66,8 +66,9 @@ export default function App() {
 
   const location = useLocation();
   useEffect(() => {
-    let logo = document.querySelector('header .logo');
-    logo && window.scrollTo(0, logo.clientHeight + 1);
+    scrollTo(0, 0);
+    // let logo = document.querySelector('header .logo');
+    // logo && window.scrollTo(0, logo.clientHeight + 1);
     // should we scroll past top logo even if the user hasn't done it?
     // (currently we  do) - if not the use window.offsetTop
     // to check if the user has scrolled past or not...
