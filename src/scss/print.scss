@@ -4,7 +4,8 @@
 
 @media print {
 
-  header+nav {
+  header+nav,
+  .pseudo-filter {
     display: none !important;
   }
 
