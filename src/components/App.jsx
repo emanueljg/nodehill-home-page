@@ -95,6 +95,9 @@ export default function App() {
       <Logo />
     </header>
     <NavMenu />
+    <div className="print-pagename">
+      {routes.find(x => x.path === location.pathname)?.label}
+    </div>
     <main>
       <div className="container">
         <Routes>
