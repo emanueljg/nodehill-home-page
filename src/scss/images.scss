@@ -38,16 +38,19 @@ img.align-left {
   user-select: none;
 }
 
-img[src*="page-posters"] {
+.page-poster-holder img,
+.pseudo-filter {
   width: 100vw;
   display: block;
   position: absolute;
   object-fit: cover;
   left: 0;
+  aspect-ratio: 4 / 1;
 }
 
-img[src*="page-posters"] {
-  aspect-ratio: 4 / 1;
+.pseudo-filter {
+  background-image: url('/images/patterns/big-odd-black.png');
+  opacity: 0.5;
 }
 
 .page-poster-holder {
@@ -73,7 +76,8 @@ img[src*="page-posters"] {
     display: block;
   }
 
-  img[src*="page-posters"] {
+  .page-poster-holder img,
+  .pseudo-filter {
     aspect-ratio: 2 / 1;
   }
 

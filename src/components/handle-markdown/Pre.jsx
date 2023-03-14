@@ -44,12 +44,13 @@ export default function Pre({ children }) {
             src={d.src} alt={d.alt}
             style={{ objectPosition: d.position[0] + '% ' + d.position[1] + '%' }}
           />
+          <div className="pseudo-filter"></div>
         </span>
         {d.text && <span
           className={'poster-text ' + alignBig}
           style={bigTextCss}
         >
-          {d.text}
+          {[...d.text].map(x => <span>{x}</span>)}
         </span>}
       </span>
       <span className={'small-poster-image ' + d.className}>
@@ -58,12 +59,13 @@ export default function Pre({ children }) {
             src={d.src} alt={d.alt}
             style={{ objectPosition: d.positionSmall[0] + '% ' + d.positionSmall[1] + '%' }}
           />
+          <div className="pseudo-filter"></div>
         </span>
         {d.text && <span
           className={'poster-text ' + alignSmall}
           style={smallTextCss}
         >
-          {d.text}
+          {[...d.text].map(x => <span>{x}</span>)}
         </span>}
       </span>
     </>;
