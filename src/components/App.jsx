@@ -82,9 +82,8 @@ export default function App() {
 
   const location = useLocation();
   useEffect(() => {
-    scrollTo(0, 0);
-    // let logo = document.querySelector('header .logo');
-    // logo && window.scrollTo(0, logo.clientHeight + 1);
+    let logo = document.querySelector('header .logo');
+    logo && window.scrollTo(0, logo.clientHeight + 1);
     // should we scroll past top logo even if the user hasn't done it?
     // (currently we  do) - if not the use window.offsetTop
     // to check if the user has scrolled past or not...

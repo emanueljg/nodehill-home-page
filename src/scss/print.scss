@@ -31,7 +31,7 @@
     h4,
     p,
     ul {
-      width: 80%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -44,6 +44,10 @@
 
   .page-poster-holder {
     height: auto;
+  }
+
+  .poster-text {
+    margin-top: -2cm !important;
   }
 
   .logo img {

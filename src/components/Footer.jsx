@@ -10,7 +10,7 @@ export default function Footer() {
   return <>
     <div className="row">
       <div className="offset-8 col-4 d-none d-lg-block">
-        <img className="hill" src="/images/logos/nodehill-hill.png" />
+        <img className="hill" src="/images/logos/nodehill-hill.png" alt="Node Hill logo" />
       </div>
     </div>
     <div className="row">
@@ -22,10 +22,10 @@ export default function Footer() {
           <p>Org-nr: 559028-9459</p>
           <p className="mt-2"><b>Tel:</b> +46 (0) 79 313 62 44</p>
           <p className="mt-2"><b>Email:</b> <a href="mailto:info@nodehill.com">info@nodehill.com</a></p>
-          <p className="mt-2"><a href="https://www.linkedin.com/company/78601480" target="_blank"><img src="/images/logos/linked-in.svg" /></a></p>
+          <p className="mt-2"><a href="https://www.linkedin.com/company/78601480" target="_blank"><img src="/images/logos/linked-in.svg" alt="Linked In logo" /></a></p>
         </address>
         <Link className="logo position-absolute d-block d-md-none" to="/">
-          <img src="/images/logos/nodehill-logo-text-green-vertical.jpg" />
+          <img src="/images/logos/nodehill-logo-text-green-vertical.jpg" alt="Node Hill logo" />
         </Link>
       </div>
       <div className="col-12 col-md-7 col-lg-4 mt-3 m-md-0 text-dark px-5 position-relative">
@@ -34,12 +34,12 @@ export default function Footer() {
           {routes.map(({ path, label, parent }) => <p className="me-5"><Link to={path}>{parent && ((" " || parent.label) + ' ')}{label}</Link></p>)}
         </nav>
         <Link className="logo position-absolute d-none d-md-block d-lg-none" to="/">
-          <img className="" src="/images/logos/nodehill-logo-text-green-vertical.jpg" />
+          <img className="" src="/images/logos/nodehill-logo-text-green-vertical.jpg" alt="Node Hill logo" />
         </Link>
       </div>
       <div className="d-none d-lg-block col-lg-4 text-dark px-5 text-end position-relative">
         <Link to="/">
-          <img className="d-none d-lg-block" src="/images/logos/nodehill-logo-text-green.jpg" />
+          <img className="d-none d-lg-block" src="/images/logos/nodehill-logo-text-green.jpg" alt="Node Hill logo" />
         </Link>
       </div>
     </div>
