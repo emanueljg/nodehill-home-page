@@ -10,7 +10,9 @@ export default function Pre({ children }) {
       "positionSmall": [50, 50],
       "textPosition": ["center", 0, 50],
       "textPositionSmall": ["center", 0, 50],
-      "className": ""
+      // add in code
+      "pattern": "big-odd-black",
+      "patternOpacity": 0.5
     };
 
     const s = JSON.parse(children[0].props.children);
@@ -37,6 +39,11 @@ export default function Pre({ children }) {
         : Math.max(4, Math.abs(d.textPositionSmall[1])) + 'vw'
     };
 
+    const patternCss = {
+      opacity: d.patternOpacity,
+      backgroundImage: `url("/images/patterns/${d.pattern}.png")`
+    };
+
     return <>
       <span className={'big-poster-image ' + d.className}>
         <span className={'page-poster-holder ' + d.className}>
@@ -44,7 +51,7 @@ export default function Pre({ children }) {
             src={d.src} alt={d.alt}
             style={{ objectPosition: d.position[0] + '% ' + d.position[1] + '%' }}
           />
-          <div className="pseudo-filter"></div>
+          <div className="pseudo-filter" style={patternCss}></div>
         </span>
         {d.text && <span
           className={'poster-text ' + alignBig}
@@ -59,7 +66,7 @@ export default function Pre({ children }) {
             src={d.src} alt={d.alt}
             style={{ objectPosition: d.positionSmall[0] + '% ' + d.positionSmall[1] + '%' }}
           />
-          <div className="pseudo-filter"></div>
+          <div className="pseudo-filter" style={patternCss}></div>
         </span>
         {d.text && <span
           className={'poster-text ' + alignSmall}

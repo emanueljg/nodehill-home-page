@@ -6,7 +6,9 @@
   "position": [50,37],
   "positionSmall" : [50,70],
   "textPosition": ["center", 0, 55],
-  "textPositionSmall": ["center", 0, 60]
+  "textPositionSmall": ["center", 0, 60],
+  "pattern": "small-odd-black",
+  "patternOpacity": 0.4
 }
 ```
 
