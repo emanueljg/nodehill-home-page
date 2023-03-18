@@ -1,0 +1,46 @@
+  @media only screen {
+    body.dark-mode {
+      background-color: black;
+      color: #ddd;
+
+      .header-logo {
+        display: none !important;
+      }
+
+      .header-logo-dark {
+        display: inline-block !important;
+      }
+
+      footer {
+        .hill {
+          mix-blend-mode: lighten;
+        }
+
+        .row:nth-of-type(2) {
+          background-image: none;
+          filter: brightness(80%);
+        }
+      }
+
+      .navbar {
+        background-color: black;
+
+        .container {
+          background-image: url('/images/logos/nodehill-black-dmode.png');
+        }
+
+        .nav-link {
+          color: #ddd;
+        }
+
+        .dropdown-menu {
+          filter: brightness(70%);
+        }
+
+        a,
+        .dropdown-toggle {
+          border-top-color: #000;
+        }
+      }
+    }
+  }

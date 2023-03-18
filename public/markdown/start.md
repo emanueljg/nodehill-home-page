@@ -2,7 +2,7 @@
 {
   "src": "/images/page-posters/ai.jpg",
   "alt": "ai",
-  "text": "Articificiell intelligens...",
+  "text": "Artificiell intelligens...",
   "position": [50,21],
   "textPosition": ["center", 0, 80]
 }

@@ -50,7 +50,7 @@
     color: #899b47 !important;
   }
 
-  a,
+  a:not(.dropdown-item),
   .dropdown-toggle {
     border-top: 2px solid #fff;
 
