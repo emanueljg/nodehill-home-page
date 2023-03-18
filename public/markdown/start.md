@@ -1,8 +1,10 @@
 ```json,poster-image
 {
-  "src": "/images/page-posters/sea.jpg",
-  "alt": "stormy sea",
-  "text": "The water is wide..."
+  "src": "/images/page-posters/ai.jpg",
+  "alt": "ai",
+  "text": "Articificiell intelligens...",
+  "position": [50,21],
+  "textPosition": ["center", 0, 80]
 }
 ```
 
