@@ -1,4 +1,30 @@
 .navbar {
+
+  .container {
+    background-image: url('/images/logos/nodehill-black.png');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: -8rem 0.3rem;
+    transition: background-position 0.5s;
+  }
+
+  .container .navbar-nav {
+    transition: padding-left 0.5s;
+    cursor: pointer;
+  }
+
+  .container.showlogo {
+    @media (min-width: 992px) {
+      background-position: 1rem 0.3rem;
+    }
+  }
+
+  .container.showlogo .navbar-nav {
+    @media (min-width: 992px) {
+      padding-left: 9rem;
+    }
+  }
+
   position: sticky;
   z-index: 100;
   background-color: white;
@@ -28,7 +54,7 @@
   .dropdown-toggle {
     border-top: 2px solid #fff;
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 991.8px) {
       border: 0;
     }
   }

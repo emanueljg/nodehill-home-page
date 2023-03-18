@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import NavMenu from './NavMenu';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { useStates } from '../utilities/states';
 import MarkDownViewer from './handle-markdown/MarkDownViewer';
 import Logo from './Logo';
 import Footer from './Footer';
 
 export default function App() {
+
+  const navigate = useNavigate();
 
   const s = useStates('main', {
     mdLoaded: false,
@@ -50,7 +52,7 @@ export default function App() {
     })();
     // Fix clicks on hamburger menu items and sub menu items 
     // so that the menu hides after click
-    let listener = e => {
+    const clickListener = e => {
       let toggler = document.querySelector('button.navbar-toggler');
       if (toggler.clientHeight && e.target.closest('.nav-link, .dropdown-item')
         && !e.target.classList.contains('dropdown-toggle')) {
@@ -59,23 +61,29 @@ export default function App() {
       else if (e.target.closest('.dropdown-item')) {
         setTimeout(() => document.body.click(), 0);
       }
+      else if (e.target.closest('.navbar-nav') && !e.target.closest('a')) {
+        // click on logo in navbar
+        navigate('/');
+      }
     }
-    document.body.addEventListener('click', listener);
+    document.body.addEventListener('click', clickListener);
 
-
-    /*let listener2 = () => {
-      let posterImages = [...document.querySelectorAll('.page-poster-holder img')];
-      let grey = posterImages.map(x => Math.min(1, Math.abs((x.offsetTop + x.height / 2 - window.scrollY) / window.innerHeight - 0.5)))
-      posterImages.forEach((x, i) => x.style.filter = 'invert(' + grey[i] + ')');
-    };
-    window.addEventListener('scroll', listener2);
-    window.addEventListener('resize', listener2);*/
+    const scrollListener = e => {
+      let logo = document.querySelector('header .logo');
+      let navbarContainer = document.querySelector('.navbar .container');
+      if (logo && window.scrollY > logo.clientHeight) {
+        navbarContainer.classList.add('showlogo');
+      }
+      else {
+        navbarContainer.classList.remove('showlogo');
+      }
+    }
+    window.addEventListener('scroll', scrollListener);
 
 
     return () => {
-      document.body.removeEventListener('click', listener);
-      /*window.removeEventListener('scroll', listener2);
-      window.removeEventListener('resize', listener2);*/
+      document.body.removeEventListener('click', clickListener);
+      window.removeEventListener('scroll', scrollListener);
     };
 
   }, []);
@@ -83,10 +91,7 @@ export default function App() {
   const location = useLocation();
   useEffect(() => {
     let logo = document.querySelector('header .logo');
-    logo && window.scrollTo(0, logo.clientHeight + 1);
-    // should we scroll past top logo even if the user hasn't done it?
-    // (currently we  do) - if not the use window.offsetTop
-    // to check if the user has scrolled past or not...
+    logo && window.scrollTo(0, window.innerWidth < 992 ? 0 : logo.clientHeight + 1);
   }, [location]);
 
   return !s.mdLoaded ? null : <>
