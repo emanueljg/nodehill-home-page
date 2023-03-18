@@ -60,3 +60,8 @@ footer {
   }
 
 }
+
+// Safari bug on overflow when inline-block, fix:
+body.safari footer nav {
+  display: block;
+}

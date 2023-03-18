@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useStates } from '../utilities/states';
+import Settings from './Settings';
 
 export default function Footer() {
 
@@ -29,6 +30,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="col-12 col-md-7 col-lg-4 mt-3 m-md-0 text-dark px-5 position-relative">
+        <Settings />
         <p className="mb-2"><b>Pages:</b></p>
         <nav>
           {routes.map(({ path, label, parent }) => <p className="me-5"><Link to={path}>{parent && ((" " || parent.label) + ' ')}{label}</Link></p>)}

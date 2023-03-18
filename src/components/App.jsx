@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import NavMenu from './NavMenu';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { useStates } from '../utilities/states';
+import localStore from '../utilities/localStore';
 import MarkDownViewer from './handle-markdown/MarkDownViewer';
 import Logo from './Logo';
 import Footer from './Footer';
@@ -36,6 +37,9 @@ export default function App() {
       }
     ]
   });
+
+  const lStore = useStates('localStore', localStore);
+  useEffect(() => lStore.save() && undefined, [lStore]);
 
   let routes = [...s.menu].filter(x => x.path);
   s.menu.filter(x => x.sub).forEach(x => routes = [...routes, ...x.sub]);
@@ -115,5 +119,12 @@ export default function App() {
     <footer className="container-fluid text-light">
       <Footer />
     </footer>
+    {lStore.cookiesApproved === '0' && <div className="approveCookies">
+      <div>
+        <p>Vi använder cookies för att ge dig den bästa upplevelsen på vår webbplats.</p>
+        <p>Om du fortsätter att använda webbplatsen utgår vi från att du godkänner detta.</p>
+        <button className="btn btn-primary" onClick={() => lStore.cookiesApproved = '1'}>OK</button>
+      </div>
+    </div>}
   </>
 }
