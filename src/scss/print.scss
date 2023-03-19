@@ -4,6 +4,10 @@
 
 @media print {
 
+  body {
+    background-color: #fff;
+  }
+
   header+nav,
   .pseudo-filter {
     display: none !important;
@@ -47,7 +51,12 @@
   }
 
   .poster-text {
+    color: #fff;
     margin-top: -2cm !important;
+    text-align: center !important;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .logo img {
@@ -56,6 +65,7 @@
 
   footer .row:nth-of-type(2) {
     background-color: white;
+    filter: brightness(100%);
 
     div:nth-of-type(2) {
       display: none;

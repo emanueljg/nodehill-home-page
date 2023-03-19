@@ -1,10 +1,12 @@
 ```json,poster-image
 {
   "src": "/images/page-posters/ai-ver2.jpg",
-  "alt": "Är NodeHill rädda för AI?",
   "text": "Är NodeHill rädda för AI?",
-  "position": [50,21],
-  "textPosition": ["center", 0, 80]
+  "textSmall": "Är NodeHill \nrädda för AI?",
+  "position": [50,20.5],
+  "textPosition": ["left", 8, 70],
+  "textPositionSmall": ["left", 8, 57],
+  "className": "creepy"
 }
 ```
 
@@ -15,7 +17,6 @@ Lorem ipsum, *dolor sit amet consectetur* adipisicing elit. Atque culpa, **volup
 ```json,poster-image
 {
   "src": "/images/page-posters/students.jpg",
-  "alt": "students",
   "text": "Learn more in Agile Teams!",
   "position": [50,10],
   "textPosition": ["center", 0, 30],

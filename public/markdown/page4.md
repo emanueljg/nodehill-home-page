@@ -1,3 +1,16 @@
+```json,poster-image
+{
+  "src": "/images/page-posters/pooh-helping-hands.jpg",
+  "text": "Är agil metodik \nalltid lättrörlig?",
+  "position": [50,70],
+  "textPosition": ["right", 0, 5],
+  "textPositionSmall": ["center", 0, 2],
+  "pattern": "small-odd-black",
+  "className": "extra-line-height"
+}
+```
+
+
 # Page 4
 
 Quae nam repellat veniam sed, doloremque, corrupti aliquam illum praesentium maxime voluptatum animi eos rem non. Architecto illo quod fugiat animi numquam!

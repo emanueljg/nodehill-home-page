@@ -16,18 +16,12 @@ img.align-left {
   display: block;
 }
 
-.page-poster-holder+.poster-text {
+.poster-text {
   padding: 0 4vw;
   display: block;
-  font-family: 'Sofia Sans';
-  font-weight: 900;
   line-height: 1;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+  color: #cfcfcf;
+  -webkit-text-stroke: 0.15vw #000;
   position: absolute;
   width: 100%;
   left: 0;
@@ -36,6 +30,10 @@ img.align-left {
   margin-top: -14vw;
   -webkit-user-select: none;
   user-select: none;
+
+  span:nth-child(even) {
+    color: #899b47;
+  }
 }
 
 .page-poster-holder img,
@@ -55,6 +53,12 @@ img.align-left {
 
 .page-poster-holder {
   height: 25vw;
+}
+
+.big-poster-image,
+.small-poster-image {
+  font-family: 'Lilita One';
+  font-weight: 400;
 }
 
 .big-poster-image {
@@ -92,6 +96,11 @@ img.align-left {
 
 }
 
-body.dark-mode .poster-text {
-  color: #ccc;
+.creepy {
+  font-family: 'Creepster';
+  font-weight: 400;
+}
+
+.extra-line-height .poster-text {
+  line-height: 1.15 !important;
 }

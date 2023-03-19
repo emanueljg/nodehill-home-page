@@ -1,10 +1,10 @@
 ```json,poster-image
 {
   "src": "/images/page-posters/eniac-operators-color.jpg",
-  "alt": "Din data i molnet...",
   "text": "Det senaste inom programmering",
   "position": [50,21],
-  "textPosition": ["center", 0, 80]
+  "textPosition": ["center", 0, 72],
+  "textPositionSmall": ["center", 5, 70]
 }
 ```
 

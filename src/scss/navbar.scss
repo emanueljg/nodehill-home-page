@@ -97,11 +97,15 @@
 .navbar-toggler::after {
   margin-left: 0.5em;
   color: #333;
-  content: 'Menu';
+  content: 'Meny';
   font-size: 90%;
   font-weight: 900;
   padding: 0.5em;
   display: inline-block;
+}
+
+body.dark-mode .navbar-toggler::after {
+  color: #eee;
 }
 
 .navbar-toggler:focus,
