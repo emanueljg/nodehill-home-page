@@ -1,9 +1,10 @@
 ```json,poster-image
 {
   "src": "/images/page-posters/eniac-operators-color.jpg",
-  "text": "Det senaste inom programmering",
+  "text": "Det senaste inom \nprogrammering",
   "position": [50,21],
-  "textPosition": ["center", 0, 72],
+  "pattern": "horizontal-lines",
+  "textPosition": ["center", -13, 48],
   "textPositionSmall": ["center", 5, 70]
 }
 ```

@@ -89,18 +89,26 @@ img.align-left {
     height: 50vw;
   }
 
-  .page-poster-holder+.poster-text {
+  .poster-text {
     font-size: 8vw;
     margin-top: -31vw;
   }
 
 }
 
-.creepy {
+.creepy .poster-text {
   font-family: 'Creepster';
   font-weight: 400;
+
+  @media screen and (orientation: landscape) and (min-width: 992px) {
+    font-size: 5vw;
+  }
 }
 
 .extra-line-height .poster-text {
   line-height: 1.15 !important;
+}
+
+.warmer img {
+  filter: hue-rotate(312deg);
 }

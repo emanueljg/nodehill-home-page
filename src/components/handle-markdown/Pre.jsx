@@ -22,6 +22,8 @@ export default function Pre({ children }) {
     s.position && (s.positionSmall = s.positionSmall || s.position);
     s.text && (s.textSmall = s.textSmall || s.text);
     s.textPosition && (s.textPositionSmall = s.textPositionSmall || s.textPosition);
+    s.pattern && (s.patternSmall = s.patternSmall || s.pattern.replace(/big/, 'small'));
+    s.patternOpacity && (s.patternOpacitySmall = s.patternOpacitySmall || s.patternOpacity)
     s.text && !s.alt && (s.alt = s.text);
     const d = Object.assign(defaults, s);
 

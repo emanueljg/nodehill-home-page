@@ -1,11 +1,11 @@
 ```json,poster-image
 {
   "src": "/images/page-posters/ai-ver2.jpg",
-  "text": "Är NodeHill rädda för AI?",
-  "textSmall": "Är NodeHill \nrädda för AI?",
+  "text": "Är NodeHill \nrädda för AI?",
   "position": [50,20.5],
-  "textPosition": ["left", 8, 70],
-  "textPositionSmall": ["left", 8, 57],
+  "textPosition": ["center", -49, 49],
+  "textPositionSmall": ["center", -48, 57],
+  "patternOpacity": 0.3,
   "className": "creepy"
 }
 ```

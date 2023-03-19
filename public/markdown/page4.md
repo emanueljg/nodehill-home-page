@@ -5,8 +5,8 @@
   "position": [50,70],
   "textPosition": ["right", 0, 5],
   "textPositionSmall": ["center", 0, 2],
-  "pattern": "small-odd-black",
-  "className": "extra-line-height"
+  "pattern": "vertical-lines",
+  "className": "extra-line-height warmer"
 }
 ```
 
