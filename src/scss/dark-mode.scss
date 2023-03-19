@@ -53,6 +53,10 @@
         .dropdown-toggle {
           border-top-color: #2d2d2d;
         }
+
+        .active .dropdown-toggle {
+          border-top-color: #899b47;
+        }
       }
     }
   }
