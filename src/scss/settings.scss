@@ -4,7 +4,10 @@
   margin-bottom: 1rem;
 
   label {
+    -webkit-user-select: none;
+    user-select: none;
     display: block;
+    cursor: pointer;
   }
 
   span {

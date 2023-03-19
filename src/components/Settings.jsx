@@ -15,8 +15,13 @@ export default function Settings() {
     e.target.name === 'cookiesApproved' && window.scrollTo(0, 100000);
   }
 
+  function labelClick(e) {
+    let input = e.target.nextSibling;
+    lStore[input.name] = lStore[input.name] === '0' ? '1' : '0';
+  }
+
   return <div className="settings">
-    <label><span>Cookies</span><input onClick={clickFix} className="form-range" type="range" min="0" max="1"  {...lStore.bind('cookiesApproved')} /></label>
-    <label><span>Dark mode</span><input onClick={clickFix} className="form-range" type="range" min="0" max="1"  {...lStore.bind('darkMode')} /></label>
+    <label><span onClick={labelClick}>Cookies</span><input onClick={clickFix} className="form-range" type="range" min="0" max="1"  {...lStore.bind('cookiesApproved')} /></label>
+    <label><span onClick={labelClick}>Dark mode</span><input onClick={clickFix} className="form-range" type="range" min="0" max="1"  {...lStore.bind('darkMode')} /></label>
   </div>
 }

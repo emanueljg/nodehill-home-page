@@ -27,7 +27,7 @@
 
   position: sticky;
   z-index: 100;
-  background-color: white;
+  background-color: #eee;
   top: -1px;
   border-top: 1px solid #899b47;
   font-weight: bold;
@@ -52,7 +52,7 @@
 
   a:not(.dropdown-item),
   .dropdown-toggle {
-    border-top: 2px solid #fff;
+    border-top: 2px solid #eee;
 
     @media (max-width: 991.8px) {
       border: 0;

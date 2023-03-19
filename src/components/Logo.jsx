@@ -5,8 +5,8 @@ export default function Logo() {
     <div className="logo container">
       <div className="row">
         <div className="col text-center text-lg-start">
-          <img className="d-inline-block header-logo" src="/images/logos/nodehill-full.jpg" alt="Node Hill logo" />
-          <img className="d-none header-logo-dark" src="/images/logos/nodehill-full-dmode.jpg" alt="Node Hill logo" />
+          <img className="d-inline-block header-logo" src="/images/logos/nodehill-full.png" alt="Node Hill logo" />
+          <img className="d-none header-logo-dark" src="/images/logos/nodehill-full-dmode.png" alt="Node Hill logo" />
         </div>
       </div>
     </div>

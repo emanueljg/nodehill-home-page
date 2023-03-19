@@ -1,6 +1,6 @@
   @media only screen {
     body.dark-mode {
-      background-color: black;
+      background-color: #2d2d2d;
       color: #ddd;
 
       .header-logo {
@@ -23,7 +23,7 @@
       }
 
       .navbar {
-        background-color: black;
+        background-color: #2d2d2d;
 
         .container {
           background-image: url('/images/logos/nodehill-black-dmode.png');
@@ -39,7 +39,7 @@
 
         a,
         .dropdown-toggle {
-          border-top-color: #000;
+          border-top-color: #2d2d2d;
         }
       }
     }

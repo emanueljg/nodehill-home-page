@@ -1,3 +1,13 @@
+```json,poster-image
+{
+  "src": "/images/page-posters/eniac-operators-color.jpg",
+  "alt": "Din data i molnet...",
+  "text": "Det senaste inom programmering",
+  "position": [50,21],
+  "textPosition": ["center", 0, 80]
+}
+```
+
 # Page 5
 
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit provident adipisci, accusantium ducimus aliquid reiciendis eaque quia, fugit eum corporis illum quae deleniti aperiam pariatur vero officia rerum vitae aut.

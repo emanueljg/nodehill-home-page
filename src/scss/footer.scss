@@ -5,9 +5,10 @@ footer {
 
   .row:nth-of-type(2) {
     padding-top: 20px;
-    background-color: #d2dab4;
-    background-image: url('/images/patterns/big-odd.png');
-    background-size: 100%; // interesting effect
+    background-color: #cbd4ac;
+    background-image: url("/images/patterns/vertical-lines-white.png");
+    filter: brightness(0.9);
+    background-size: 100%;
     border-top: 1px solid #899b47;
     padding-bottom: 15px;
   }

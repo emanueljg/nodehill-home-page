@@ -1,8 +1,8 @@
 ```json,poster-image
 {
-  "src": "/images/page-posters/ai.jpg",
-  "alt": "ai",
-  "text": "Artificiell intelligens...",
+  "src": "/images/page-posters/ai-ver2.jpg",
+  "alt": "Är NodeHill rädda för AI?",
+  "text": "Är NodeHill rädda för AI?",
   "position": [50,21],
   "textPosition": ["center", 0, 80]
 }
