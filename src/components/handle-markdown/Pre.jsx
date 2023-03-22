@@ -88,6 +88,7 @@ export default function Pre({ children }) {
           style={smallTextCss}
         >
           {d.textSmall.split(' ').map(x => <span>{x.includes('\n') ? <br /> : ''}{x} </span>)}
+          <span />{/* This empty span -> Safari center fix */}
         </span>}
       </span>
     </>;
