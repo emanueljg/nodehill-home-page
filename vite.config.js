@@ -20,14 +20,5 @@ export default defineConfig({
         }
       },
     }
-  ],
-  server: {
-    proxy: {
-      '/backend.php': {
-        target: 'https://thomas.nodehill.com/',
-        changeOrigin: true,
-        secure: true
-      }
-    }
-  }
+  ]
 });
