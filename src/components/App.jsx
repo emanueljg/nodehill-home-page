@@ -13,49 +13,32 @@ export default function App() {
 
   const s = useStates('main', {
     mdLoaded: false,
-    // Main menu!
-    // Note the property Component can be used too 
-    // in order to navigate and mount a special component
-    // if only md/markdown is provided the component
-    // MarkDownViewer will be used with the markdown
-    menu: [
-      { label: 'Start', path: '/', md: 'start' },
-      { label: 'About us', path: '/about', md: 'about' },
-      {
-        label: 'Our customers', sub: [
-          { label: 'Page 4', path: '/page4', md: 'page4' },
-          { label: 'Page 5', path: '/page5', md: 'page5' }
-        ]
-      },
-      { label: 'Our team', path: '/our-team', md: 'our-team' },
-      { label: 'Top 10', path: '/top-10', md: 'top-10' },
-      {
-        label: 'Classroom stories', sub: [
-          { label: 'Page 7', path: '/page7', md: 'page7' },
-          { label: 'Page 8', path: '/page8', md: 'page8' }
-        ]
-      }
-    ]
+    menu: []
   });
 
   const lStore = useStates('localStore', localStore);
   useEffect(() => lStore.save() && undefined, [lStore]);
 
-  let routes = [...s.menu].filter(x => x.path);
-  s.menu.filter(x => x.sub).forEach(x => routes = [...routes, ...x.sub]);
-  s.menu.forEach(x => x.sub && x.sub.forEach(y => !y.parent && (y.parent = x)));
-
   useEffect(() => {
-    // Load all the markdown
+    // Load the menu strcuture
     (async () => {
-      let allMd = routes
-        .filter(x => x.md && (x.Component = x.Component || MarkDownViewer))
-        .map(x => fetch('/markdown/' + x.md + '.md').then(x => x.text()));
-      (await Promise.all(allMd)).forEach((t, i) => routes[i].mdContent = t);
+      // Load the menu structure
+      s.menu = (await (await fetch('/backend.php?menuStructure')).json())[0].menuStructure;
+      // Load the markdown content
+      let mdContent = await (await fetch('/backend.php?markdownContent')).json()
+      // Process the menu structure
+      let routes = [...s.menu].filter(x => x.path);
+      s.menu.filter(x => x.sub).forEach(x => routes = [...routes, ...x.sub]);
+      routes.forEach(x => x.path && (x.md = x.path.slice(1)));
+      routes.forEach(x => x.Component = MarkDownViewer);
+      routes.forEach(x => x.mdContent =
+        mdContent.find(y => y.slug === x.path || y.slug === '/start'));
+      routes.forEach(x => x.mdContent = x.mdContent.markdown)
+      s.menu.forEach(x => x.sub && x.sub.forEach(y => !y.parent && (y.parent = x)));
+      s.routes = routes;
       s.mdLoaded = true;
     })();
-    // Fix clicks on hamburger menu items and sub menu items 
-    // so that the menu hides after click
+
     const clickListener = e => {
       let toggler = document.querySelector('button.navbar-toggler');
       if (toggler.clientHeight && e.target.closest('.nav-link, .dropdown-item')
@@ -98,6 +81,7 @@ export default function App() {
     logo && window.scrollTo(0, window.innerWidth < 992 ? 0 : logo.clientHeight + 1);
   }, [location]);
 
+  let routes = s.routes;
   return !s.mdLoaded ? null : <>
     <header>
       <Logo />
