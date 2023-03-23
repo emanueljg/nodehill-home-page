@@ -29,6 +29,9 @@ server {
 
   index index.html index.htm index.php;
 
+  # important for hard reload of frontend based routes
+  error_page 404 =200 /index.html;
+
   location / {
     try_files $uri $uri/ =404;
   }
